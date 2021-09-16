@@ -26,4 +26,16 @@ public class UserRegistration {
 		return result;
 	}
 
+	/**
+	 * method to validate email
+	 * 
+	 * @param email- email which is passed as parameter
+	 * @return
+	 */
+	public Boolean validateEmail(String email) {
+		String string = "^[a-zA-z0-9]+?(.)[a-zA-Z0-9+_-]*@[a-zA-Z]+\\.[a-zA-z]{2,4}?(.)[A-za-z]*$";
+		Boolean result = Pattern.matches(string, email);
+		return result;
+	}
+
 }
