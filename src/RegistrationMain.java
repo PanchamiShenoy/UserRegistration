@@ -23,5 +23,12 @@ public class RegistrationMain {
 			System.out.println("Valid second name");
 		} else
 			System.out.println("Invalid second name");
+		System.out.println("Enter valid email");
+		String email = scanner.nextLine();
+		Boolean emailCheck = register.validateEmail(email);
+		if (emailCheck) {
+			System.out.println("Valid email");
+		} else
+			System.out.println("Invalid email");
 	}
 }
