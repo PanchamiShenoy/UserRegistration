@@ -49,4 +49,16 @@ public class UserRegistration {
 		Boolean result = Pattern.matches(string, phone);
 		return result;
 	}
+
+	/**
+	 * method to validate password
+	 * 
+	 * @param password -password is passed as parameter
+	 * @return boolean whether valid or invalid
+	 */
+	public Boolean validatePassword(String password) {
+		String string = "[0-9A-Za-z]{8}[0-9A-Za-z]*";
+		Boolean result = Pattern.matches(string, password);
+		return result;
+	}
 }

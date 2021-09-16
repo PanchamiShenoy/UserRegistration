@@ -38,5 +38,12 @@ public class RegistrationMain {
 			System.out.println("Valid phone number");
 		} else
 			System.out.println("Invalid phone number");
+		System.out.println("Enter valid password ");
+		String password = scanner.nextLine();
+		Boolean passwordCheck = register.validatePassword(password);
+		if (passwordCheck) {
+			System.out.println("Valid password");
+		} else
+			System.out.println("Invalid password");
 	}
 }
