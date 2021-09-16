@@ -23,6 +23,7 @@ public class RegistrationMain {
 			System.out.println("Valid second name");
 		} else
 			System.out.println("Invalid second name");
+
 		System.out.println("Enter valid email");
 		String email = scanner.nextLine();
 		Boolean emailCheck = register.validateEmail(email);
@@ -30,5 +31,12 @@ public class RegistrationMain {
 			System.out.println("Valid email");
 		} else
 			System.out.println("Invalid email");
+		System.out.println("Enter valid phone number ");
+		String phone = scanner.nextLine();
+		Boolean phoneCheck = register.validatePhone(phone);
+		if (phoneCheck) {
+			System.out.println("Valid phone number");
+		} else
+			System.out.println("Invalid phone number");
 	}
 }
