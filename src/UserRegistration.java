@@ -57,7 +57,7 @@ public class UserRegistration {
 	 * @return boolean whether valid or invalid
 	 */
 	public Boolean validatePassword(String password) {
-		String string = "[0-9A-Za-z]{8}[0-9A-Za-z]*";
+		String string = "([a-zA-Z0-9])*[A-Z]([a-zA-Z0-9])*{8}[a-zA-Z0-9]*";
 		Boolean result = Pattern.matches(string, password);
 		return result;
 	}
