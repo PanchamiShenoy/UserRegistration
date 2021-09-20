@@ -45,5 +45,6 @@ public class RegistrationMain {
 			System.out.println("Valid password");
 		} else
 			System.out.println("Invalid password");
+
 	}
 }
